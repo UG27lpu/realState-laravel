@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+[x-cloak] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+
+.glass {
+    background: linear-gradient(135deg, rgba(255,255,255,0.6), rgba(255,255,255,0.25));
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid rgba(255,255,255,0.35);
+}
+
+.dark .glass {
+    background: linear-gradient(135deg, rgba(24,24,27,0.55), rgba(24,24,27,0.25));
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+@keyframes float-card {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
+.animate-card-float {
+    animation: float-card 6s ease-in-out infinite;
+}
+
+.dashboard-card-hover {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dashboard-card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px -12px rgba(0,0,0,0.18);
+}
