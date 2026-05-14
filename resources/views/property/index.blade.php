@@ -30,7 +30,33 @@
             @endforeach
         </div>
 
-        <section class="mt-10">
+        @if ($featured->isNotEmpty())
+            <section class="mt-10">
+                <div class="mb-3 flex items-center gap-2">
+                    <h2 class="text-lg font-semibold">Featured listings</h2>
+                    <x-badge tone="amber">Hand-picked</x-badge>
+                </div>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    @foreach ($featured as $property)
+                        <x-property-card :property="$property" />
+                    @endforeach
+                </div>
+            </section>
+        @endif
+
+        @if ($recentlyAdded->isNotEmpty())
+            <section class="mt-10">
+                <h2 class="mb-3 text-lg font-semibold">Recently added</h2>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    @foreach ($recentlyAdded as $property)
+                        <x-property-card :property="$property" />
+                    @endforeach
+                </div>
+            </section>
+        @endif
+
+        <section class="mt-12">
+            <h2 class="mb-3 text-lg font-semibold">All listings</h2>
             @if ($properties->isEmpty())
                 <x-alert tone="info">No properties match your selection yet.</x-alert>
             @else
@@ -39,9 +65,7 @@
                         <x-property-card :property="$property" />
                     @endforeach
                 </div>
-                <div class="mt-6">
-                    {{ $properties->links() }}
-                </div>
+                <div class="mt-6">{{ $properties->links() }}</div>
             @endif
         </section>
     </div>

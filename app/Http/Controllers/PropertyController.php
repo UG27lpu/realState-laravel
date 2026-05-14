@@ -29,9 +29,11 @@ class PropertyController extends Controller
         $properties = $query->latest()->paginate(12)->withQueryString();
 
         return view('property.index', [
-            'properties'  => $properties,
-            'typeFilter'  => $category ?: null,
-            'types'       => PropertyType::options(),
+            'properties'    => $properties,
+            'typeFilter'    => $category ?: null,
+            'types'         => PropertyType::options(),
+            'featured'      => Property::query()->visible()->featured()->with('images')->limit(6)->get(),
+            'recentlyAdded' => Property::query()->visible()->with('images')->latest()->limit(8)->get(),
         ]);
     }
 
