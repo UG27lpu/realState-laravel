@@ -10,6 +10,7 @@ use App\Http\Requests\Property\PropertyRequest;
 use App\Models\Property;
 use App\Models\PropertyImage;
 use App\Services\PropertyMediaService;
+use App\Services\PropertySearchService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -18,22 +19,18 @@ use Illuminate\View\View;
 
 class PropertyController extends Controller
 {
-    public function index(Request $request): View
+    public function index(Request $request, PropertySearchService $search): View
     {
-        $query = Property::query()->visible()->with(['images', 'owner']);
-
-        if ($category = $request->string('type')->toString()) {
-            $query->ofType($category);
-        }
-
-        $properties = $query->latest()->paginate(12)->withQueryString();
+        $properties = $search->paginate($request);
 
         return view('property.index', [
             'properties'    => $properties,
-            'typeFilter'    => $category ?: null,
-            'types'         => PropertyType::options(),
             'featured'      => Property::query()->visible()->featured()->with('images')->limit(6)->get(),
             'recentlyAdded' => Property::query()->visible()->with('images')->latest()->limit(8)->get(),
+            'types'         => PropertyType::options(),
+            'statuses'      => PropertyStatus::options(),
+            'sorts'         => $search->sortOptions(),
+            'filters'       => $request->only(['q', 'type', 'status', 'city', 'price_min', 'price_max', 'area_min', 'area_max', 'bedrooms', 'sort']),
         ]);
     }
 
