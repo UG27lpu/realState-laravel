@@ -126,9 +126,13 @@
                         @else
                             <x-button as="a" href="{{ route('login') }}" variant="primary" class="w-full">Sign in to save</x-button>
                         @endauth
+                        <form method="POST" action="{{ route('compare.add', $property) }}">
+                            @csrf
+                            <x-button type="submit" variant="outline" class="w-full">Add to compare</x-button>
+                        </form>
                         @auth
                             @can('update', $property)
-                                <x-button as="a" href="{{ route('properties.edit', $property) }}" variant="outline" class="w-full">Edit listing</x-button>
+                                <x-button as="a" href="{{ route('properties.edit', $property) }}" variant="ghost" class="w-full">Edit listing</x-button>
                             @endcan
                         @endauth
                     </div>

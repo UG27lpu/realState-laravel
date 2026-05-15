@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\CompareController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\WishlistController;
@@ -19,9 +20,14 @@ Route::view('/demo-disclosure', 'pages.legal')->name('pages.legal');
 Route::get('/properties', [PropertyController::class, 'index'])->name('properties.index');
 Route::get('/properties/{property:slug}', [PropertyController::class, 'show'])->name('properties.show');
 
+// Compare works for guests via session.
+Route::get('/compare', [CompareController::class, 'index'])->name('compare.index');
+Route::post('/compare/{property:slug}', [CompareController::class, 'add'])->name('compare.add');
+Route::post('/compare/{property:slug}/remove', [CompareController::class, 'remove'])->name('compare.remove');
+Route::post('/compare', [CompareController::class, 'clear'])->name('compare.clear');
+
 Route::view('/tools/emi', 'pages.coming-soon')->name('tools.emi');
 Route::view('/tools/investment', 'pages.coming-soon')->name('tools.investment');
-Route::view('/compare', 'pages.coming-soon')->name('compare.index');
 
 Route::middleware('guest')->group(function () {
     Route::get('/login', [LoginController::class, 'create'])->name('login');
