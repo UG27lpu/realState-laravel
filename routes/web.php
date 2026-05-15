@@ -63,6 +63,7 @@ Route::middleware('auth')->group(function () {
     // Smart demo endpoints — JSON.
     Route::post('/smart/describe',  [SmartPropertyController::class, 'describe'])->name('smart.describe');
     Route::post('/smart/price',     [SmartPropertyController::class, 'predictPrice'])->name('smart.price');
+    Route::post('/smart/duplicate', [SmartPropertyController::class, 'checkDuplicate'])->name('smart.duplicate');
 
     Route::view('/appointments', 'pages.coming-soon')->name('appointments.index');
     Route::view('/profile', 'pages.coming-soon')->name('profile.edit');

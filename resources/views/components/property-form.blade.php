@@ -90,7 +90,37 @@
             <x-input label="Latitude" name="latitude" type="number" step="0.0000001" :value="$property?->latitude" />
             <x-input label="Longitude" name="longitude" type="number" step="0.0000001" :value="$property?->longitude" />
         </div>
-        <x-input label="Survey number" name="survey_number" :value="$property?->survey_number" />
+        <div x-data="{
+            duplicate: null,
+            async check(ev) {
+                const value = ev.target.value.trim();
+                this.duplicate = null;
+                if (!value) return;
+                try {
+                    const res = await window.axios.post('{{ route('smart.duplicate') }}', {
+                        survey_number: value,
+                        ignore_id: {{ $property?->id ?? 'null' }},
+                    });
+                    if (res.data.duplicate) {
+                        this.duplicate = res.data.matches;
+                    }
+                } catch (e) { /* ignore */ }
+            }
+        }">
+            <x-input label="Survey number" name="survey_number" :value="$property?->survey_number"
+                     hint="Used by the duplicate detection demo to flag overlapping submissions."
+                     @change="check($event)" />
+            <template x-if="duplicate && duplicate.length">
+                <div class="mt-2 rounded-xl border border-amber-300 bg-amber-50 p-3 text-xs text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-200">
+                    <p class="font-medium">Heads up — this survey number already appears on:</p>
+                    <ul class="mt-1 list-disc pl-4">
+                        <template x-for="m in duplicate" :key="m.url">
+                            <li><a :href="m.url" class="underline" target="_blank" x-text="m.title + ' (' + m.city + ')'"></a></li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+        </div>
 
         <div>
             <span class="mb-1 block text-sm font-medium text-zinc-700 dark:text-zinc-300">Nearby facilities</span>

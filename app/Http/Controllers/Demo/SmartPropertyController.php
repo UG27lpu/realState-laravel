@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Demo;
 
 use App\Http\Controllers\Controller;
 use App\Services\Demo\AiDescriptionService;
+use App\Services\Demo\DuplicateSurveyService;
 use App\Services\Demo\PricePredictionService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -50,5 +51,27 @@ class SmartPropertyController extends Controller
         ]);
 
         return response()->json($service->estimate($data) + ['demo' => true]);
+    }
+
+    public function checkDuplicate(Request $request, DuplicateSurveyService $service): JsonResponse
+    {
+        $data = $request->validate([
+            'survey_number' => ['required', 'string', 'max:64'],
+            'ignore_id'     => ['nullable', 'integer'],
+        ]);
+
+        $matches = $service->findMatches($data['survey_number'], $data['ignore_id'] ?? null)
+            ->map(fn ($p) => [
+                'title' => $p->title,
+                'city'  => $p->city,
+                'owner' => $p->owner?->name,
+                'url'   => route('properties.show', $p),
+            ]);
+
+        return response()->json([
+            'duplicate' => $matches->isNotEmpty(),
+            'matches'   => $matches,
+            'demo'      => true,
+        ]);
     }
 }
