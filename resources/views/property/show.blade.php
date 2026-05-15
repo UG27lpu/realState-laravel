@@ -139,5 +139,19 @@
                 </x-card>
             </aside>
         </div>
+
+        @if ($related->isNotEmpty())
+            <section class="mt-12">
+                <div class="mb-3 flex items-center gap-2">
+                    <h2 class="text-lg font-semibold">Recommended for you</h2>
+                    <x-demo-tag label="AI demo" />
+                </div>
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    @foreach ($related as $p)
+                        <x-property-card :property="$p" />
+                    @endforeach
+                </div>
+            </section>
+        @endif
     </div>
 @endsection

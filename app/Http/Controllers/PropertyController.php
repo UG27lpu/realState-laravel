@@ -34,14 +34,16 @@ class PropertyController extends Controller
         ]);
     }
 
-    public function show(Property $property): View
+    public function show(Property $property, \App\Services\Demo\RecommendationService $recommender): View
     {
         Gate::authorize('view', $property);
 
         $property->load(['images', 'videos', 'documents', 'owner']);
         $property->increment('view_count');
 
-        return view('property.show', compact('property'));
+        $related = $recommender->similarTo($property, 4);
+
+        return view('property.show', compact('property', 'related'));
     }
 
     public function create(): View
