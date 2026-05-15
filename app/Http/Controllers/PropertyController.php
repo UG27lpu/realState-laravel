@@ -34,8 +34,11 @@ class PropertyController extends Controller
         ]);
     }
 
-    public function show(Property $property, \App\Services\Demo\RecommendationService $recommender): View
-    {
+    public function show(
+        Property $property,
+        \App\Services\Demo\PricePredictionService $pricing,
+        \App\Services\Demo\RecommendationService $recommender,
+    ): View {
         Gate::authorize('view', $property);
 
         $property->load(['images', 'videos', 'documents', 'owner']);
@@ -43,7 +46,11 @@ class PropertyController extends Controller
 
         $related = $recommender->similarTo($property, 4);
 
-        return view('property.show', compact('property', 'related'));
+        return view('property.show', [
+            'property'  => $property,
+            'related'   => $related,
+            'priceDemo' => $pricing->forProperty($property),
+        ]);
     }
 
     public function create(): View

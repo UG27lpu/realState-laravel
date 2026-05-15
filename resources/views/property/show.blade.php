@@ -103,6 +103,22 @@
 
             <aside class="space-y-4">
                 <x-card class="p-6">
+                    <div class="flex items-center gap-2">
+                        <p class="text-xs uppercase tracking-wider text-zinc-500">Estimated value</p>
+                        <x-demo-tag label="Demo only" />
+                    </div>
+                    <p class="mt-2 text-2xl font-semibold">
+                        {{ config('estatify.currency.symbol') }}{{ number_format($priceDemo['estimate']) }}
+                    </p>
+                    <p class="text-xs text-zinc-500">
+                        Range: {{ config('estatify.currency.symbol') }}{{ number_format($priceDemo['low']) }}
+                        – {{ config('estatify.currency.symbol') }}{{ number_format($priceDemo['high']) }}
+                        &middot; ~{{ config('estatify.currency.symbol') }}{{ number_format($priceDemo['per_sqft']) }}/{{ $property->area_unit }}
+                    </p>
+                    <p class="mt-2 text-[11px] text-zinc-500">{{ $priceDemo['note'] }}</p>
+                </x-card>
+
+                <x-card class="p-6">
                     <p class="text-xs uppercase tracking-wider text-zinc-500">Listed by</p>
                     <div class="mt-2 flex items-center gap-3">
                         <img src="{{ $property->owner?->avatarUrl() }}" alt="" class="h-10 w-10 rounded-full">

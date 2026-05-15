@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Demo;
 
 use App\Http\Controllers\Controller;
 use App\Services\Demo\AiDescriptionService;
+use App\Services\Demo\PricePredictionService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -33,5 +34,21 @@ class SmartPropertyController extends Controller
             'description' => $ai->generate($data),
             'demo'        => true,
         ]);
+    }
+
+    public function predictPrice(Request $request, PricePredictionService $service): JsonResponse
+    {
+        $data = $request->validate([
+            'area'       => ['required', 'numeric'],
+            'city'       => ['required', 'string', 'max:96'],
+            'type'       => ['required', 'string'],
+            'bedrooms'   => ['nullable', 'integer'],
+            'bathrooms'  => ['nullable', 'integer'],
+            'furnished'  => ['nullable', 'boolean'],
+            'parking'    => ['nullable', 'boolean'],
+            'year_built' => ['nullable', 'integer'],
+        ]);
+
+        return response()->json($service->estimate($data) + ['demo' => true]);
     }
 }
