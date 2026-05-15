@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PropertyController;
+use App\Http\Controllers\WishlistController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', fn () => view('welcome'))->name('home');
@@ -15,11 +16,9 @@ Route::get('/', fn () => view('welcome'))->name('home');
 Route::view('/about', 'pages.about')->name('pages.about');
 Route::view('/demo-disclosure', 'pages.legal')->name('pages.legal');
 
-// Public property browsing.
 Route::get('/properties', [PropertyController::class, 'index'])->name('properties.index');
 Route::get('/properties/{property:slug}', [PropertyController::class, 'show'])->name('properties.show');
 
-// Placeholders until the matching feature stages land.
 Route::view('/tools/emi', 'pages.coming-soon')->name('tools.emi');
 Route::view('/tools/investment', 'pages.coming-soon')->name('tools.investment');
 Route::view('/compare', 'pages.coming-soon')->name('compare.index');
@@ -51,7 +50,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/properties/{property:slug}', [PropertyController::class, 'destroy'])->name('properties.destroy');
     Route::delete('/property-images/{image}', [PropertyController::class, 'deleteImage'])->name('properties.images.destroy');
 
-    Route::view('/wishlist', 'pages.coming-soon')->name('wishlist.index');
+    Route::get('/wishlist', [WishlistController::class, 'index'])->name('wishlist.index');
+    Route::post('/wishlist/{property:slug}', [WishlistController::class, 'toggle'])->name('wishlist.toggle');
+
     Route::view('/appointments', 'pages.coming-soon')->name('appointments.index');
     Route::view('/profile', 'pages.coming-soon')->name('profile.edit');
 });

@@ -113,6 +113,20 @@
                     </div>
                     <div class="mt-4 flex flex-col gap-2">
                         @auth
+                            <form method="POST" action="{{ route('wishlist.toggle', $property) }}">
+                                @csrf
+                                <x-button type="submit" variant="primary" class="w-full">
+                                    @if (auth()->user()->wishlistedProperties()->where('property_id', $property->id)->exists())
+                                        Saved to wishlist
+                                    @else
+                                        Save to wishlist
+                                    @endif
+                                </x-button>
+                            </form>
+                        @else
+                            <x-button as="a" href="{{ route('login') }}" variant="primary" class="w-full">Sign in to save</x-button>
+                        @endauth
+                        @auth
                             @can('update', $property)
                                 <x-button as="a" href="{{ route('properties.edit', $property) }}" variant="outline" class="w-full">Edit listing</x-button>
                             @endcan
