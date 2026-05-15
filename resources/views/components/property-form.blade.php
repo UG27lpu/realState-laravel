@@ -17,7 +17,41 @@
     <section class="space-y-4">
         <h2 class="text-lg font-semibold">Basics</h2>
         <x-input label="Title" name="title" :value="$property?->title" required />
-        <x-textarea label="Description" name="description" :value="$property?->description" rows="5" />
+        <div x-data="{
+            generating: false,
+            async generate() {
+                this.generating = true;
+                try {
+                    const f = this.$root;
+                    const payload = {
+                        title: f.querySelector('[name=title]')?.value,
+                        type: f.querySelector('[name=type]')?.value,
+                        city: f.querySelector('[name=city]')?.value,
+                        bedrooms: f.querySelector('[name=bedrooms]')?.value || null,
+                        bathrooms: f.querySelector('[name=bathrooms]')?.value || null,
+                        area: f.querySelector('[name=area]')?.value || null,
+                        area_unit: f.querySelector('[name=area_unit]')?.value,
+                        year_built: f.querySelector('[name=year_built]')?.value || null,
+                        furnished: !!f.querySelector('[name=furnished]')?.checked,
+                        parking: !!f.querySelector('[name=parking]')?.checked,
+                    };
+                    const res = await window.axios.post('{{ route('smart.describe') }}', payload);
+                    if (res.data.description) {
+                        f.querySelector('[name=description]').value = res.data.description;
+                    }
+                } catch (e) { console.error(e); }
+                this.generating = false;
+            }
+        }">
+            <x-textarea label="Description" name="description" :value="$property?->description" rows="5" />
+            <div class="mt-2 flex items-center gap-2">
+                <x-button type="button" variant="outline" size="sm" @click="generate()" x-bind:disabled="generating">
+                    <span x-show="!generating">Generate with AI</span>
+                    <span x-show="generating" x-cloak>Generating…</span>
+                </x-button>
+                <x-demo-tag label="AI demo" />
+            </div>
+        </div>
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <x-select label="Property type" name="type" :options="$types" :value="$property?->type?->value" placeholder="Select a type" />
             <x-select label="Listing status" name="status" :options="$statuses" :value="$property?->status?->value" placeholder="Select a status" />

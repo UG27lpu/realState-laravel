@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CompareController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Demo\SmartPropertyController;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\WishlistController;
 use Illuminate\Support\Facades\Route;
@@ -58,6 +59,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/wishlist', [WishlistController::class, 'index'])->name('wishlist.index');
     Route::post('/wishlist/{property:slug}', [WishlistController::class, 'toggle'])->name('wishlist.toggle');
+
+    // Smart demo endpoints — JSON.
+    Route::post('/smart/describe',  [SmartPropertyController::class, 'describe'])->name('smart.describe');
 
     Route::view('/appointments', 'pages.coming-soon')->name('appointments.index');
     Route::view('/profile', 'pages.coming-soon')->name('profile.edit');
