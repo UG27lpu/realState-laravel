@@ -11,6 +11,7 @@ use App\Http\Controllers\ChatController;
 use App\Http\Controllers\CompareController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Demo\SmartPropertyController;
+use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\WishlistController;
 use Illuminate\Support\Facades\Route;
@@ -67,6 +68,11 @@ Route::middleware('auth')->group(function () {
     Route::post('/messages/start/{property:slug}', [ChatController::class, 'start'])->name('chat.start');
     Route::get('/messages/{conversation}', [ChatController::class, 'show'])->name('chat.show');
     Route::post('/messages/{conversation}', [ChatController::class, 'send'])->name('chat.send');
+
+    // Notifications.
+    Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications.index');
+    Route::get('/notifications/{id}/read', [NotificationController::class, 'markRead'])->name('notifications.read');
+    Route::post('/notifications/mark-all', [NotificationController::class, 'markAllRead'])->name('notifications.readAll');
 
     // Smart demo endpoints — JSON.
     Route::post('/smart/describe',  [SmartPropertyController::class, 'describe'])->name('smart.describe');
