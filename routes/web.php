@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\CompareController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Demo\SmartPropertyController;
@@ -59,6 +60,12 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/wishlist', [WishlistController::class, 'index'])->name('wishlist.index');
     Route::post('/wishlist/{property:slug}', [WishlistController::class, 'toggle'])->name('wishlist.toggle');
+
+    // Chat.
+    Route::get('/messages', [ChatController::class, 'index'])->name('chat.index');
+    Route::post('/messages/start/{property:slug}', [ChatController::class, 'start'])->name('chat.start');
+    Route::get('/messages/{conversation}', [ChatController::class, 'show'])->name('chat.show');
+    Route::post('/messages/{conversation}', [ChatController::class, 'send'])->name('chat.send');
 
     // Smart demo endpoints — JSON.
     Route::post('/smart/describe',  [SmartPropertyController::class, 'describe'])->name('smart.describe');

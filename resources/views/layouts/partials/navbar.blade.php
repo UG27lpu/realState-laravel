@@ -38,6 +38,7 @@
                         @endif
                         <a href="{{ route('dashboard') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800">My dashboard</a>
                         <a href="{{ route('wishlist.index') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800">Wishlist</a>
+                        <a href="{{ route('chat.index') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800">Messages</a>
                         <a href="{{ route('appointments.index') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800">Appointments</a>
                         <a href="{{ route('profile.edit') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800">Profile</a>
                         <form method="POST" action="{{ route('logout') }}">

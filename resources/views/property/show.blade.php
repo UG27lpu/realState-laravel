@@ -186,9 +186,15 @@
                     </div>
                     <div class="mt-4 flex flex-col gap-2">
                         @auth
+                            @if (auth()->id() !== $property->owner_id)
+                                <form method="POST" action="{{ route('chat.start', $property) }}">
+                                    @csrf
+                                    <x-button type="submit" variant="primary" class="w-full">Message agent</x-button>
+                                </form>
+                            @endif
                             <form method="POST" action="{{ route('wishlist.toggle', $property) }}">
                                 @csrf
-                                <x-button type="submit" variant="primary" class="w-full">
+                                <x-button type="submit" variant="outline" class="w-full">
                                     @if (auth()->user()->wishlistedProperties()->where('property_id', $property->id)->exists())
                                         Saved to wishlist
                                     @else
@@ -197,11 +203,11 @@
                                 </x-button>
                             </form>
                         @else
-                            <x-button as="a" href="{{ route('login') }}" variant="primary" class="w-full">Sign in to save</x-button>
+                            <x-button as="a" href="{{ route('login') }}" variant="primary" class="w-full">Sign in to message agent</x-button>
                         @endauth
                         <form method="POST" action="{{ route('compare.add', $property) }}">
                             @csrf
-                            <x-button type="submit" variant="outline" class="w-full">Add to compare</x-button>
+                            <x-button type="submit" variant="ghost" class="w-full">Add to compare</x-button>
                         </form>
                         @auth
                             @can('update', $property)
