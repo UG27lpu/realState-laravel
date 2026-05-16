@@ -89,6 +89,12 @@
                     </x-card>
                 @endif
 
+                <x-card class="p-6">
+                    <h2 class="mb-3 text-lg font-semibold">Location</h2>
+                    <p class="mb-3 text-sm text-zinc-600 dark:text-zinc-400">{{ $property->address }}, {{ $property->city }} {{ $property->pincode }}</p>
+                    <x-property-map :lat="$property->latitude" :lng="$property->longitude" :label="$property->title" />
+                </x-card>
+
                 @if (! empty($property->nearby_facilities))
                     <x-card class="p-6">
                         <h2 class="mb-3 text-lg font-semibold">Nearby</h2>

@@ -85,10 +85,27 @@
             <x-input label="State" name="state" :value="$property?->state" />
             <x-input label="Pincode" name="pincode" :value="$property?->pincode" />
         </div>
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3"
+             x-data="{
+                useMyLocation() {
+                    if (!navigator.geolocation) return;
+                    navigator.geolocation.getCurrentPosition((pos) => {
+                        this.$root.querySelector('[name=latitude]').value = pos.coords.latitude.toFixed(7);
+                        this.$root.querySelector('[name=longitude]').value = pos.coords.longitude.toFixed(7);
+                    });
+                }
+             }">
             <x-input label="Country" name="country" :value="$property?->country ?? 'India'" />
             <x-input label="Latitude" name="latitude" type="number" step="0.0000001" :value="$property?->latitude" />
             <x-input label="Longitude" name="longitude" type="number" step="0.0000001" :value="$property?->longitude" />
+            <div class="sm:col-span-3">
+                <x-button type="button" variant="outline" size="sm" @click="useMyLocation()">Pin my current location</x-button>
+                @if ($property && $property->latitude && $property->longitude)
+                    <div class="mt-3">
+                        <x-property-map :lat="$property->latitude" :lng="$property->longitude" height="220px" />
+                    </div>
+                @endif
+            </div>
         </div>
         <div x-data="{
             duplicate: null,
