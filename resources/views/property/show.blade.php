@@ -175,6 +175,22 @@
                     @endif
                 </x-card>
 
+                @auth
+                    @if (auth()->id() !== $property->owner_id)
+                        <x-card class="p-6">
+                            <h2 class="text-sm font-semibold uppercase tracking-wider text-zinc-500">Book a visit</h2>
+                            <form method="POST" action="{{ route('appointments.store', $property) }}" class="mt-3 space-y-3">
+                                @csrf
+                                <input type="datetime-local" name="scheduled_for" required min="{{ now()->format('Y-m-d\TH:i') }}"
+                                       class="block w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-900">
+                                <textarea name="notes" rows="2" placeholder="Any notes for the agent?"
+                                       class="block w-full rounded-xl border border-zinc-300 bg-white px-3 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-900"></textarea>
+                                <x-button type="submit" class="w-full">Request appointment</x-button>
+                            </form>
+                        </x-card>
+                    @endif
+                @endauth
+
                 <x-card class="p-6">
                     <p class="text-xs uppercase tracking-wider text-zinc-500">Listed by</p>
                     <div class="mt-2 flex items-center gap-3">

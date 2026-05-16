@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\NewPasswordController;
@@ -72,7 +73,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/smart/price',     [SmartPropertyController::class, 'predictPrice'])->name('smart.price');
     Route::post('/smart/duplicate', [SmartPropertyController::class, 'checkDuplicate'])->name('smart.duplicate');
 
-    Route::view('/appointments', 'pages.coming-soon')->name('appointments.index');
+    Route::get('/appointments', [AppointmentController::class, 'index'])->name('appointments.index');
+    Route::post('/properties/{property:slug}/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
+    Route::put('/appointments/{appointment}', [AppointmentController::class, 'update'])->name('appointments.update');
+
     Route::view('/profile', 'pages.coming-soon')->name('profile.edit');
 });
 
