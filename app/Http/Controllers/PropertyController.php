@@ -37,6 +37,7 @@ class PropertyController extends Controller
     public function show(
         Property $property,
         \App\Services\Demo\PricePredictionService $pricing,
+        \App\Services\Demo\LegalVerificationService $legal,
         \App\Services\Demo\RecommendationService $recommender,
     ): View {
         Gate::authorize('view', $property);
@@ -50,6 +51,7 @@ class PropertyController extends Controller
             'property'  => $property,
             'related'   => $related,
             'priceDemo' => $pricing->forProperty($property),
+            'legalDemo' => $legal->evaluate($property),
         ]);
     }
 

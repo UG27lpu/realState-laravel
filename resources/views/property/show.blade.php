@@ -119,6 +119,25 @@
                 </x-card>
 
                 <x-card class="p-6">
+                    <div class="flex items-center gap-2">
+                        <p class="text-xs uppercase tracking-wider text-zinc-500">Legal verification</p>
+                        <x-demo-tag label="Simulated" />
+                    </div>
+                    <div class="mt-2">
+                        <x-badge :tone="app(\App\Services\Demo\LegalVerificationService::class)->badgeTone($legalDemo['status'])">
+                            {{ app(\App\Services\Demo\LegalVerificationService::class)->statusLabel($legalDemo['status']) }}
+                        </x-badge>
+                    </div>
+                    @if (! empty($legalDemo['reasons']))
+                        <ul class="mt-3 space-y-1 text-xs text-zinc-600 dark:text-zinc-400">
+                            @foreach ($legalDemo['reasons'] as $reason)
+                                <li>&bull; {{ $reason }}</li>
+                            @endforeach
+                        </ul>
+                    @endif
+                </x-card>
+
+                <x-card class="p-6">
                     <p class="text-xs uppercase tracking-wider text-zinc-500">Listed by</p>
                     <div class="mt-2 flex items-center gap-3">
                         <img src="{{ $property->owner?->avatarUrl() }}" alt="" class="h-10 w-10 rounded-full">
