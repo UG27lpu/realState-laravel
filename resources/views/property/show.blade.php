@@ -30,12 +30,44 @@
 
         <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
             <div class="lg:col-span-2 space-y-6">
-                <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                    <img src="{{ $property->coverUrl() }}" class="aspect-[16/9] w-full object-cover" alt="">
+                <div class="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+                     x-data="{
+                        active: 0,
+                        autoplay: false,
+                        timer: null,
+                        images: @js($property->images->map(fn($i) => $i->url())->all() ?: [$property->coverUrl()]),
+                        next() { this.active = (this.active + 1) % this.images.length; },
+                        prev() { this.active = (this.active - 1 + this.images.length) % this.images.length; },
+                        toggle360() {
+                            this.autoplay = !this.autoplay;
+                            if (this.autoplay) { this.timer = setInterval(() => this.next(), 1100); }
+                            else { clearInterval(this.timer); }
+                        }
+                     }">
+                    <div class="relative">
+                        <template x-for="(src, idx) in images" :key="idx">
+                            <img x-show="active === idx" :src="src" class="aspect-[16/9] w-full object-cover" alt="">
+                        </template>
+                        <button type="button" @click="prev()" class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-1.5 shadow hover:bg-white">
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button type="button" @click="next()" class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-1.5 shadow hover:bg-white">
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                        <button type="button" @click="toggle360()"
+                                class="absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full bg-zinc-900/80 px-3 py-1 text-xs font-medium text-white backdrop-blur hover:bg-zinc-900">
+                            <span x-show="!autoplay">Start 360° tour</span>
+                            <span x-show="autoplay" x-cloak>Stop tour</span>
+                        </button>
+                    </div>
                     @if ($property->images->count() > 1)
-                        <div class="grid grid-cols-4 gap-2 p-2">
-                            @foreach ($property->images->take(8) as $image)
-                                <img src="{{ $image->url() }}" alt="" class="aspect-square w-full rounded-lg object-cover">
+                        <div class="grid grid-cols-4 gap-2 p-2 sm:grid-cols-6">
+                            @foreach ($property->images->take(12) as $idx => $image)
+                                <button type="button" @click="active = {{ $idx }}"
+                                        :class="active === {{ $idx }} ? 'ring-2 ring-indigo-500' : ''"
+                                        class="overflow-hidden rounded-lg">
+                                    <img src="{{ $image->url() }}" alt="" class="aspect-square w-full object-cover">
+                                </button>
                             @endforeach
                         </div>
                     @endif
