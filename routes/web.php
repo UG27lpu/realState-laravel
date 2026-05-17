@@ -31,7 +31,7 @@ Route::post('/compare/{property:slug}/remove', [CompareController::class, 'remov
 Route::post('/compare', [CompareController::class, 'clear'])->name('compare.clear');
 
 Route::match(['get', 'post'], '/tools/emi', [\App\Http\Controllers\CalculatorController::class, 'emi'])->name('tools.emi');
-Route::view('/tools/investment', 'pages.coming-soon')->name('tools.investment');
+Route::match(['get', 'post'], '/tools/investment', [\App\Http\Controllers\CalculatorController::class, 'investment'])->name('tools.investment');
 
 Route::middleware('guest')->group(function () {
     Route::get('/login', [LoginController::class, 'create'])->name('login');

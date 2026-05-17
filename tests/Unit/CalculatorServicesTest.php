@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use App\Services\EmiCalculatorService;
+use App\Services\InvestmentReturnService;
 use Tests\TestCase;
 
 class CalculatorServicesTest extends TestCase
@@ -23,5 +24,13 @@ class CalculatorServicesTest extends TestCase
 
         $this->assertEqualsWithDelta(10_000.0, $result['monthly_emi'], 0.01);
         $this->assertEqualsWithDelta(0.0, $result['total_interest'], 0.01);
+    }
+
+    public function test_investment_projection_grows_with_time(): void
+    {
+        $result = (new InvestmentReturnService())->project(1_000_000, 8, 10);
+
+        $this->assertGreaterThan(2_000_000, $result['final_value']);
+        $this->assertCount(10, $result['schedule']);
     }
 }
