@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\PropertyModerationController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\Auth\LoginController;
@@ -88,4 +89,10 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', AdminDashboardController::class)->name('dashboard');
+
+    Route::get('/properties', [PropertyModerationController::class, 'index'])->name('properties.index');
+    Route::get('/properties/{property:slug}', [PropertyModerationController::class, 'review'])->name('properties.review');
+    Route::post('/properties/{property:slug}/approve', [PropertyModerationController::class, 'approve'])->name('properties.approve');
+    Route::post('/properties/{property:slug}/reject',  [PropertyModerationController::class, 'reject'])->name('properties.reject');
+    Route::post('/properties/{property:slug}/under-review', [PropertyModerationController::class, 'markUnderReview'])->name('properties.under-review');
 });
