@@ -15,6 +15,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Demo\SmartPropertyController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\PropertyController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\WishlistController;
 use Illuminate\Support\Facades\Route;
@@ -92,6 +93,9 @@ Route::middleware('auth')->group(function () {
 // Public verification routes (reachable by QR scan).
 Route::get('/verify/{property:slug}', [VerificationController::class, 'show'])->name('verify.show');
 Route::get('/verify/{property:slug}/qr.svg', [VerificationController::class, 'qr'])->name('verify.qr');
+
+// PDF generation.
+Route::get('/properties/{property:slug}/report.pdf', [ReportController::class, 'propertyReport'])->name('properties.report');
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', AdminDashboardController::class)->name('dashboard');

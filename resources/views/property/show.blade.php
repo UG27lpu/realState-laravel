@@ -182,6 +182,7 @@
                     </div>
                     <img src="{{ route('verify.qr', $property) }}" alt="QR" class="mt-3 h-32 w-32 rounded-xl border border-zinc-200 bg-white p-2 dark:border-zinc-800 dark:bg-zinc-900">
                     <a href="{{ route('verify.show', $property) }}" class="mt-2 block text-xs text-indigo-600 hover:underline dark:text-indigo-400">Open verification page &rarr;</a>
+                    <a href="{{ route('properties.report', $property) }}" class="mt-1 block text-xs text-indigo-600 hover:underline dark:text-indigo-400">Download report (PDF) &rarr;</a>
                 </x-card>
 
                 @auth
