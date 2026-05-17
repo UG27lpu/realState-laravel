@@ -14,6 +14,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Demo\SmartPropertyController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\PropertyController;
+use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\WishlistController;
 use Illuminate\Support\Facades\Route;
 
@@ -86,6 +87,10 @@ Route::middleware('auth')->group(function () {
 
     Route::view('/profile', 'pages.coming-soon')->name('profile.edit');
 });
+
+// Public verification routes (reachable by QR scan).
+Route::get('/verify/{property:slug}', [VerificationController::class, 'show'])->name('verify.show');
+Route::get('/verify/{property:slug}/qr.svg', [VerificationController::class, 'qr'])->name('verify.qr');
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', AdminDashboardController::class)->name('dashboard');

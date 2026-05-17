@@ -175,6 +175,15 @@
                     @endif
                 </x-card>
 
+                <x-card class="p-6">
+                    <div class="flex items-center gap-2">
+                        <p class="text-xs uppercase tracking-wider text-zinc-500">QR verification</p>
+                        <x-demo-tag label="Demo" />
+                    </div>
+                    <img src="{{ route('verify.qr', $property) }}" alt="QR" class="mt-3 h-32 w-32 rounded-xl border border-zinc-200 bg-white p-2 dark:border-zinc-800 dark:bg-zinc-900">
+                    <a href="{{ route('verify.show', $property) }}" class="mt-2 block text-xs text-indigo-600 hover:underline dark:text-indigo-400">Open verification page &rarr;</a>
+                </x-card>
+
                 @auth
                     @if (auth()->id() !== $property->owner_id)
                         <x-card class="p-6">
