@@ -44,6 +44,7 @@
                                         </select>
                                         <x-button type="submit" size="sm" variant="outline">Save</x-button>
                                     </form>
+                                    <a href="{{ route('appointments.receipt', $appt) }}" class="ml-2 inline-block text-xs text-indigo-600 hover:underline dark:text-indigo-400">Receipt PDF</a>
                                 </td>
                             </tr>
                         @endforeach

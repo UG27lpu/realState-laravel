@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\Appointment;
 use App\Models\Property;
 use App\Services\Demo\LegalVerificationService;
 use App\Services\Demo\PricePredictionService;
@@ -31,5 +32,16 @@ class PdfService
         return Pdf::loadView('pdf.property-report', $data)
             ->setPaper('a4')
             ->download('property-'.$property->slug.'.pdf');
+    }
+
+    public function appointmentReceipt(Appointment $appointment): Response
+    {
+        $appointment->load(['property', 'buyer', 'agent']);
+
+        return Pdf::loadView('pdf.appointment-receipt', [
+            'appointment' => $appointment,
+            'generated'   => now()->format('d M Y, g:i A'),
+        ])->setPaper('a5')
+          ->download('appointment-'.$appointment->id.'.pdf');
     }
 }

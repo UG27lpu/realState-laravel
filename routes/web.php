@@ -96,6 +96,7 @@ Route::get('/verify/{property:slug}/qr.svg', [VerificationController::class, 'qr
 
 // PDF generation.
 Route::get('/properties/{property:slug}/report.pdf', [ReportController::class, 'propertyReport'])->name('properties.report');
+Route::middleware('auth')->get('/appointments/{appointment}/receipt.pdf', [ReportController::class, 'appointmentReceipt'])->name('appointments.receipt');
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', AdminDashboardController::class)->name('dashboard');
