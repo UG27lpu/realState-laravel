@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\PropertyModerationController;
+use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\Auth\AdminLoginController;
 use App\Http\Controllers\Auth\LoginController;
@@ -100,4 +101,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::post('/properties/{property:slug}/approve', [PropertyModerationController::class, 'approve'])->name('properties.approve');
     Route::post('/properties/{property:slug}/reject',  [PropertyModerationController::class, 'reject'])->name('properties.reject');
     Route::post('/properties/{property:slug}/under-review', [PropertyModerationController::class, 'markUnderReview'])->name('properties.under-review');
+
+    Route::get('/users', [AdminUserController::class, 'index'])->name('users.index');
+    Route::post('/users/{user}/toggle', [AdminUserController::class, 'toggleActive'])->name('users.toggle');
 });
