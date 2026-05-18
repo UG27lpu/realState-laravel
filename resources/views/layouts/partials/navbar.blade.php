@@ -1,4 +1,5 @@
-<header class="sticky top-0 z-40 border-b border-zinc-200/70 bg-white/80 backdrop-blur dark:border-zinc-800/70 dark:bg-zinc-950/80">
+<header class="sticky top-0 z-40 border-b border-zinc-200/70 bg-white/80 backdrop-blur dark:border-zinc-800/70 dark:bg-zinc-950/80"
+        x-data="{ mobileOpen: false }">
     <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <a href="{{ url('/') }}" class="flex items-center gap-2 font-semibold tracking-tight">
             <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white shadow-sm">
@@ -57,6 +58,26 @@
                 <a href="{{ route('login') }}" class="hidden rounded-lg px-3 py-2 text-sm text-zinc-700 hover:bg-zinc-100 dark:text-zinc-200 dark:hover:bg-zinc-900 sm:inline">Log in</a>
                 <a href="{{ route('register') }}" class="rounded-lg bg-zinc-900 px-3 py-2 text-sm font-medium text-white hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200">Get started</a>
             @endauth
+
+            <button type="button" class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-200 text-zinc-600 md:hidden dark:border-zinc-800 dark:text-zinc-300"
+                    @click="mobileOpen = !mobileOpen" aria-label="Toggle menu">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            </button>
         </div>
+    </div>
+
+    <div x-show="mobileOpen" x-cloak class="border-t border-zinc-200/70 px-4 py-3 text-sm md:hidden dark:border-zinc-800/70">
+        <a href="{{ route('properties.index') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900">Properties</a>
+        <a href="{{ route('compare.index') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900">Compare</a>
+        <a href="{{ route('tools.emi') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900">EMI calculator</a>
+        <a href="{{ route('tools.investment') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900">Investment calculator</a>
+        @auth
+            <a href="{{ route('dashboard') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900">Dashboard</a>
+            <a href="{{ route('wishlist.index') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900">Wishlist</a>
+            <a href="{{ route('chat.index') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900">Messages</a>
+        @else
+            <a href="{{ route('login') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900">Log in</a>
+            <a href="{{ route('register') }}" class="block rounded-lg px-3 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-900">Register</a>
+        @endauth
     </div>
 </header>
