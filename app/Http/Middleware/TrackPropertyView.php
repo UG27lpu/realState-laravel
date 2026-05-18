@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\Property;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -9,9 +10,10 @@ use Symfony\Component\HttpFoundation\Response;
 class TrackPropertyView
 {
     /**
-     * Placeholder hook: real property-view tracking is wired up once the
-     * Property model exists. Kept here so the middleware stack is final from
-     * the bootstrap commit.
+     * If a property show page is reached, the controller already increments
+     * the view counter. This middleware exists so we can attach extra
+     * analytics (e.g. unique-visitor tracking) without touching controllers.
+     * For now it just passes through.
      */
     public function handle(Request $request, Closure $next): Response
     {

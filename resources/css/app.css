@@ -45,3 +45,16 @@ html { scroll-behavior: smooth; }
     transform: translateY(-2px);
     box-shadow: 0 12px 32px -12px rgba(0,0,0,0.18);
 }
+
+@keyframes fade-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up { animation: fade-up 0.45s ease-out both; }
+
+.gradient-hairline {
+    background: linear-gradient(90deg, transparent, rgba(99,102,241,0.6), transparent);
+    height: 1px;
+    width: 100%;
+}
