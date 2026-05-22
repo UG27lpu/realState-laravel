@@ -3,9 +3,9 @@
 <a href="{{ route('properties.show', $property) }}"
    class="group block overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900">
     <div class="relative aspect-[4/3] overflow-hidden bg-zinc-100 dark:bg-zinc-800">
-        <img src="{{ $property->coverUrl() }}" alt="{{ $property->title }}"
+        <img src="{{ $property->coverThumbUrl() }}" alt="{{ $property->title }}"
              class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-             loading="lazy">
+             loading="lazy" decoding="async">
 
         <div class="absolute left-3 top-3 flex flex-wrap gap-1">
             <x-badge tone="indigo">{{ $property->type?->label() }}</x-badge>

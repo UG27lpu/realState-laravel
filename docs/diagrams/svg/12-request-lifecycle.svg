@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 700"
+     width="1500" height="700">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+          </marker>
+          <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="8" markerHeight="8">
+            <circle cx="5" cy="5" r="4" fill="#60a5fa"/>
+          </marker>
+        </defs>
+        
+  
+  <rect x="-30.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#60a5fa" stroke-width="2" opacity="1.0"/>
+<text x="40.0" y="256" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Browser request</text>
+<path d="M110.0 265.0 L 112.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="112.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#60a5fa" stroke-width="2" opacity="1.0"/>
+<text x="182.0" y="256" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">public/index.php</text>
+<text x="182.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">front controller</text>
+<path d="M252.0 265.0 L 254.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="254.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#34d399" stroke-width="2" opacity="1.0"/>
+<text x="324.0" y="256" fill="#34d399" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Kernel</text>
+<text x="324.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Handle()</text>
+<path d="M394.0 265.0 L 396.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="396.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#34d399" stroke-width="2" opacity="1.0"/>
+<text x="466.0" y="256" fill="#34d399" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Global middleware</text>
+<text x="466.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">(StartSession, VerifyCsrfToken, …)</text>
+<path d="M536.0 265.0 L 538.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="538.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#a78bfa" stroke-width="2" opacity="1.0"/>
+<text x="608.0" y="256" fill="#a78bfa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Route resolution</text>
+<text x="608.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">web.php</text>
+<path d="M678.0 265.0 L 680.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="680.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#a78bfa" stroke-width="2" opacity="1.0"/>
+<text x="750.0" y="256" fill="#a78bfa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Route middleware</text>
+<text x="750.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">auth · admin · guest</text>
+<path d="M820.0 265.0 L 822.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="822.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#fbbf24" stroke-width="2" opacity="1.0"/>
+<text x="892.0" y="256" fill="#fbbf24" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">FormRequest</text>
+<text x="892.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">validate()</text>
+<path d="M962.0 265.0 L 964.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="964.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#fbbf24" stroke-width="2" opacity="1.0"/>
+<text x="1034.0" y="256" fill="#fbbf24" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Controller</text>
+<text x="1034.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">action</text>
+<path d="M1104.0 265.0 L 1106.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1106.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#f472b6" stroke-width="2" opacity="1.0"/>
+<text x="1176.0" y="256" fill="#f472b6" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Action / Service</text>
+<text x="1176.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">(Eloquent + Storage)</text>
+<path d="M1246.0 265.0 L 1248.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1248.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#f472b6" stroke-width="2" opacity="1.0"/>
+<text x="1318.0" y="256" fill="#f472b6" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">View / Redirect / JSON</text>
+<path d="M1388.0 265.0 L 1390.0 265.0" fill="none" stroke="#4b5563" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="1390.0" y="220" width="140" height="90" rx="10" ry="10" fill="#111827" stroke="#60a5fa" stroke-width="2" opacity="1.0"/>
+<text x="1460.0" y="256" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Response</text>
+<text x="1460.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">rendered HTML</text>
+<text x="750" y="380" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="middle" font-style="italic">Each step in the pipeline can short-circuit and return a Response (401, 403, 422 …).</text>
+<path d="M1460.0 320 C 1460.0 460, 40.0 460, 40.0 320" fill="none" stroke="#34d399" stroke-width="2.2" stroke-dasharray="5 5" marker-end="url(#arrow-emerald)"/>
+<text x="750" y="470" fill="#34d399" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Response returned to browser</text>
+<text x="750.0" y="36" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">12 — HTTP Request Lifecycle (Laravel pipeline)</text>
+</svg>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 700"
+     width="1300" height="700">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+          </marker>
+          <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="8" markerHeight="8">
+            <circle cx="5" cy="5" r="4" fill="#60a5fa"/>
+          </marker>
+        </defs>
+        
+  
+  <rect x="90" y="210" width="220" height="80" rx="14" fill="#111827" stroke="#9ca3af" stroke-width="2.5"/>
+<text x="200" y="256" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Draft</text>
+<rect x="360" y="210" width="220" height="80" rx="14" fill="#111827" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="470" y="256" fill="#fbbf24" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Submitted</text>
+<rect x="630" y="210" width="220" height="80" rx="14" fill="#111827" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="740" y="256" fill="#a78bfa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Under review</text>
+<rect x="940" y="110" width="220" height="80" rx="14" fill="#111827" stroke="#34d399" stroke-width="2.5"/>
+<text x="1050" y="156" fill="#34d399" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Approved</text>
+<rect x="940" y="340" width="220" height="80" rx="14" fill="#111827" stroke="#f87171" stroke-width="2.5"/>
+<text x="1050" y="386" fill="#f87171" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Rejected</text>
+<rect x="360" y="490" width="220" height="80" rx="14" fill="#111827" stroke="#4b5563" stroke-width="2.5"/>
+<text x="470" y="536" fill="#4b5563" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Soft-deleted</text>
+<circle cx="55" cy="250" r="10" fill="#60a5fa"/>
+<path d="M65 250 L 90 250" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-accent)"/>
+<text x="77" y="240" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">save()</text>
+<path d="M310 250 L 360 250" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="335" y="240" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="400" text-anchor="middle">StorePropertyAction (default → submitted)</text>
+<path d="M580 250 L 630 250" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="605" y="240" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="400" text-anchor="middle">Admin: mark under review</text>
+<path d="M580 230 C 700 180, 850 150, 940 150" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="770" y="130" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="400" text-anchor="middle">Admin: approve (sets approved_at)</text>
+<path d="M850 230 L 950 170" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M850 270 L 950 380" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="880" y="320" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="400" text-anchor="middle">reject (with reason)</text>
+<path d="M1050 420 C 720 470, 580 360, 480 290" fill="none" stroke="#4b5563" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+<text x="720" y="470" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="400" text-anchor="middle">Agent edits &amp; resubmits</text>
+<path d="M470 290 L 470 490" fill="none" stroke="#f87171" stroke-width="2" stroke-dasharray="3 5" marker-end="url(#arrow)"/>
+<text x="360" y="410" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="400" text-anchor="middle">Owner / Admin delete (SoftDeletes)</text>
+<text x="640" y="640" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="middle" font-style="italic">Only Approved is visible via Property::scopeVisible() — every other state is hidden from the public listing.</text>
+<text x="650.0" y="36" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">11 — State diagram: Property approval lifecycle</text>
+</svg>

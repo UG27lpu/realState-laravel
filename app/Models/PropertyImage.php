@@ -23,6 +23,25 @@ class PropertyImage extends Model
 
     public function url(): string
     {
+        if (str_starts_with($this->path, 'https://images.unsplash.com/')) {
+            $base = strtok($this->path, '?');
+            return $base.'?auto=format&fit=crop&w=1200&q=80';
+        }
+        if (str_starts_with($this->path, 'http')) {
+            return $this->path;
+        }
+        return asset('storage/'.$this->path);
+    }
+
+    public function thumbnailUrl(): string
+    {
+        if (str_starts_with($this->path, 'https://images.unsplash.com/')) {
+            $base = strtok($this->path, '?');
+            return $base.'?auto=format&fit=crop&w=500&q=75';
+        }
+        if (str_starts_with($this->path, 'http')) {
+            return $this->path;
+        }
         return asset('storage/'.$this->path);
     }
 }

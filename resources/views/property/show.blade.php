@@ -36,6 +36,7 @@
                         autoplay: false,
                         timer: null,
                         images: @js($property->images->map(fn($i) => $i->url())->all() ?: [$property->coverUrl()]),
+                        thumbs: @js($property->images->map(fn($i) => $i->thumbnailUrl())->all() ?: [$property->coverThumbUrl()]),
                         next() { this.active = (this.active + 1) % this.images.length; },
                         prev() { this.active = (this.active - 1 + this.images.length) % this.images.length; },
                         toggle360() {
@@ -46,7 +47,8 @@
                      }">
                     <div class="relative">
                         <template x-for="(src, idx) in images" :key="idx">
-                            <img x-show="active === idx" :src="src" class="aspect-[16/9] w-full object-cover" alt="">
+                            <img x-show="active === idx" :src="src" class="aspect-[16/9] w-full object-cover" alt=""
+                                 decoding="async">
                         </template>
                         <button type="button" @click="prev()" class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-1.5 shadow hover:bg-white">
                             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
@@ -66,7 +68,9 @@
                                 <button type="button" @click="active = {{ $idx }}"
                                         :class="active === {{ $idx }} ? 'ring-2 ring-indigo-500' : ''"
                                         class="overflow-hidden rounded-lg">
-                                    <img src="{{ $image->url() }}" alt="" class="aspect-square w-full object-cover">
+                                    <img src="{{ $image->thumbnailUrl() }}" alt=""
+                                         class="aspect-square w-full object-cover"
+                                         loading="lazy" decoding="async">
                                 </button>
                             @endforeach
                         </div>

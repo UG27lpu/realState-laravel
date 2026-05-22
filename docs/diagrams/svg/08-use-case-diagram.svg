@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 950"
+     width="1400" height="950">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+          </marker>
+          <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="8" markerHeight="8">
+            <circle cx="5" cy="5" r="4" fill="#60a5fa"/>
+          </marker>
+        </defs>
+        
+  
+  <circle cx="100" cy="172" r="10" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M100 182 L100 206 M86 192 L114 192 M100 206 L88 224 M100 206 L112 224" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+<text x="100" y="242" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Guest</text>
+<circle cx="100" cy="392" r="10" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M100 402 L100 426 M86 412 L114 412 M100 426 L88 444 M100 426 L112 444" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+<text x="100" y="462" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Buyer</text>
+<circle cx="100" cy="612" r="10" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M100 622 L100 646 M86 632 L114 632 M100 646 L88 664 M100 646 L112 664" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+<text x="100" y="682" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Agent</text>
+<circle cx="100" cy="812" r="10" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M100 822 L100 846 M86 832 L114 832 M100 846 L88 864 M100 846 L112 864" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+<text x="100" y="882" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Admin</text>
+<rect x="280" y="90" width="1080" height="820" rx="10" ry="10" fill="#111827" stroke="#34d399" stroke-width="2" stroke-dasharray="6 6" opacity="1.0"/>
+<text x="820" y="116" fill="#34d399" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Estatify</text>
+<ellipse cx="390" cy="170" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="390" y="174" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Browse properties</text>
+<ellipse cx="610" cy="170" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="610" y="174" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Search &amp; filter</text>
+<ellipse cx="830" cy="170" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="830" y="174" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">View property detail</text>
+<ellipse cx="1060" cy="170" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="1060" y="174" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Compare properties</text>
+<ellipse cx="390" cy="270" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="390" y="274" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">EMI calculator</text>
+<ellipse cx="610" cy="270" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="610" y="274" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Investment calculator</text>
+<ellipse cx="830" cy="270" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="830" y="274" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">QR / verify property</text>
+<ellipse cx="1060" cy="270" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="1060" y="274" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Download property PDF</text>
+<ellipse cx="390" cy="380" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="390" y="384" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Register / log in</text>
+<ellipse cx="610" cy="380" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="610" y="384" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Manage wishlist</text>
+<ellipse cx="830" cy="380" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="830" y="384" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Book appointment</text>
+<ellipse cx="1060" cy="380" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="1060" y="384" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Download receipt PDF</text>
+<ellipse cx="390" cy="490" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="390" y="494" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Chat with agent</text>
+<ellipse cx="610" cy="490" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="610" y="494" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Receive notifications</text>
+<ellipse cx="830" cy="490" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="830" y="494" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Reply to enquiries</text>
+<ellipse cx="1060" cy="490" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="1060" y="494" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Manage own listings</text>
+<ellipse cx="390" cy="600" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="390" y="604" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Create / edit property</text>
+<ellipse cx="610" cy="600" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="610" y="604" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Upload media &amp; docs</text>
+<ellipse cx="830" cy="600" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="830" y="604" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Smart price predict (demo)</text>
+<ellipse cx="1060" cy="600" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="1060" y="604" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Confirm / cancel visits</text>
+<ellipse cx="390" cy="720" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="390" y="724" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Admin login</text>
+<ellipse cx="610" cy="720" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="610" y="724" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Approve / reject property</text>
+<ellipse cx="830" cy="720" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="830" y="724" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Mark under review</text>
+<ellipse cx="1060" cy="720" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="1060" y="724" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Activate / deactivate user</text>
+<ellipse cx="500" cy="830" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="500" y="834" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">View moderation dashboard</text>
+<ellipse cx="820" cy="830" rx="105" ry="30" fill="#1f2937" stroke="#60a5fa" stroke-width="1.6"/>
+<text x="820" y="834" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Manage user roles</text>
+<path d="M140 200 C 220 200, 280 170, 285 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 280 170, 285 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 280 170, 285 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 280 170, 285 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 200 C 220 200, 500 170, 505 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 500 170, 505 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 500 170, 505 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 500 170, 505 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 200 C 220 200, 720 170, 725 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 720 170, 725 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 720 170, 725 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 720 170, 725 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 200 C 220 200, 950 170, 955 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 950 170, 955 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 950 170, 955 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 950 170, 955 170" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 200 C 220 200, 280 270, 285 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 280 270, 285 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 280 270, 285 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 280 270, 285 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 200 C 220 200, 500 270, 505 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 500 270, 505 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 500 270, 505 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 500 270, 505 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 200 C 220 200, 720 270, 725 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 720 270, 725 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 720 270, 725 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 720 270, 725 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 200 C 220 200, 950 270, 955 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 950 270, 955 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 950 270, 955 270" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 200 C 220 200, 280 380, 285 380" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 280 380, 285 380" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 280 380, 285 380" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 500 380, 505 380" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 720 380, 725 380" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 950 380, 955 380" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 280 490, 285 490" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 420 C 220 420, 500 490, 505 490" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 500 490, 505 490" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 720 490, 725 490" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 950 490, 955 490" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 280 600, 285 600" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 500 600, 505 600" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 720 600, 725 600" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 640 C 220 640, 950 600, 955 600" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 280 720, 285 720" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 500 720, 505 720" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 720 720, 725 720" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 950 720, 955 720" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 390 830, 395 830" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<path d="M140 840 C 220 840, 710 830, 715 830" fill="none" stroke="#4b5563" stroke-width="0.9" stroke-dasharray="2 4"/>
+<text x="700.0" y="36" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">08 — Use Case Diagram</text>
+</svg>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900"
+     width="1400" height="900">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+          </marker>
+          <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="8" markerHeight="8">
+            <circle cx="5" cy="5" r="4" fill="#60a5fa"/>
+          </marker>
+        </defs>
+        
+  
+  <rect x="60" y="80" width="380" height="26" rx="8" ry="8" fill="#60a5fa" opacity="0.18" stroke="#60a5fa" stroke-width="1"/>
+<text x="74" y="98" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="start">Client tier</text>
+<rect x="80" y="120" width="340" height="110" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="80" y="120" width="6" height="110" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="250.0" y="142" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Browser (Blade-rendered)</text>
+<text x="250.0" y="160" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">Alpine.js + Tailwind + Vite</text>
+<text x="250.0" y="182" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">server-rendered HTML, progressive JS</text>
+<text x="250.0" y="197" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">fetch() to JSON demo endpoints</text>
+<rect x="80" y="250" width="340" height="110" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="80" y="250" width="6" height="110" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="250.0" y="272" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Mobile camera</text>
+<text x="250.0" y="290" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">QR scanner</text>
+<text x="250.0" y="312" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">loads /verify/{slug} verification page</text>
+<rect x="500" y="80" width="480" height="26" rx="8" ry="8" fill="#60a5fa" opacity="0.18" stroke="#60a5fa" stroke-width="1"/>
+<text x="514" y="98" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="start">Application tier</text>
+<rect x="490" y="120" width="500" height="460" rx="10" ry="10" fill="#111827" stroke="#34d399" stroke-width="2" opacity="1.0"/>
+<text x="740" y="152" fill="#34d399" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Estatify Laravel app</text>
+<text x="740" y="172" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">PHP 8.3 · Laravel 13</text>
+<rect x="510" y="195" width="220" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="510" y="195" width="6" height="90" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="620.0" y="217" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Web (HTTP)</text>
+<text x="620.0" y="235" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">routes/web.php + Blade</text>
+<rect x="750" y="195" width="220" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="750" y="195" width="6" height="90" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="860.0" y="217" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Console / Tinker</text>
+<text x="860.0" y="235" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">artisan</text>
+<rect x="510" y="300" width="220" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="510" y="300" width="6" height="90" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="620.0" y="322" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Queue worker</text>
+<text x="620.0" y="340" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">QUEUE_CONNECTION=database</text>
+<rect x="750" y="300" width="220" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="750" y="300" width="6" height="90" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="860.0" y="322" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Scheduler</text>
+<text x="860.0" y="340" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">schedule:run</text>
+<rect x="510" y="405" width="460" height="160" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="510" y="405" width="6" height="160" rx="3" ry="3" fill="#a78bfa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="740.0" y="427" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Domain services &amp; actions</text>
+<text x="740.0" y="445" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">PropertySearchService · PropertyMediaService · PdfService · Demo\AiDescriptionService …</text>
+<text x="740.0" y="467" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">StorePropertyAction · UpdatePropertyAction · RegisterUserAction</text>
+<text x="740.0" y="482" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">AnalyticsService · EmiCalculatorService · InvestmentReturnService</text>
+<rect x="1040" y="80" width="320" height="26" rx="8" ry="8" fill="#60a5fa" opacity="0.18" stroke="#60a5fa" stroke-width="1"/>
+<text x="1054" y="98" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="start">Data tier</text>
+<path d="M1060 134 A140.0 14 0 0 1 1340 134 L1340 236 A140.0 14 0 0 1 1060 236 Z" fill="#111827" stroke="#34d399" stroke-width="2"/>
+<path d="M1060 134 A140.0 14 0 0 0 1340 134" fill="none" stroke="#34d399" stroke-width="2"/>
+<text x="1200.0" y="189.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Primary database</text>
+<text x="1200.0" y="205.0" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">SQLite (default) · MySQL ready</text>
+<path d="M1060 284 A140.0 14 0 0 1 1340 284 L1340 366 A140.0 14 0 0 1 1060 366 Z" fill="#111827" stroke="#fbbf24" stroke-width="2"/>
+<path d="M1060 284 A140.0 14 0 0 0 1340 284" fill="none" stroke="#fbbf24" stroke-width="2"/>
+<text x="1200.0" y="329.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Sessions</text>
+<text x="1200.0" y="345.0" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">database driver</text>
+<path d="M1060 414 A140.0 14 0 0 1 1340 414 L1340 496 A140.0 14 0 0 1 1060 496 Z" fill="#111827" stroke="#fbbf24" stroke-width="2"/>
+<path d="M1060 414 A140.0 14 0 0 0 1340 414" fill="none" stroke="#fbbf24" stroke-width="2"/>
+<text x="1200.0" y="459.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Queue + Cache</text>
+<text x="1200.0" y="475.0" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">database driver</text>
+<path d="M1060 544 A140.0 14 0 0 1 1340 544 L1340 626 A140.0 14 0 0 1 1060 626 Z" fill="#111827" stroke="#a78bfa" stroke-width="2"/>
+<path d="M1060 544 A140.0 14 0 0 0 1340 544" fill="none" stroke="#a78bfa" stroke-width="2"/>
+<text x="1200.0" y="589.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Notifications table</text>
+<text x="1200.0" y="605.0" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">UUID + morph</text>
+<rect x="1060" y="660" width="280" height="120" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="1060" y="660" width="6" height="120" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1200.0" y="682" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Public filesystem disk</text>
+<text x="1200.0" y="700" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">storage/app/public</text>
+<text x="1200.0" y="722" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">property/images · /videos · /docs</text>
+<text x="1200.0" y="737" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">served via storage symlink</text>
+<path d="M420 175 C 460 175, 470 220, 510 240" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-accent)"/>
+<text x="465" y="210" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">HTTPS</text>
+<path d="M420 305 C 460 305, 470 240, 510 240" fill="none" stroke="#60a5fa" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#arrow-accent)"/>
+<path d="M970 250 C 1020 250, 1030 180, 1060 180" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrow-emerald)"/>
+<text x="1015" y="215" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Eloquent</text>
+<path d="M970 345 C 1020 345, 1030 320, 1060 320" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrow-emerald)"/>
+<path d="M970 350 C 1020 360, 1030 455, 1060 455" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrow-emerald)"/>
+<path d="M970 485 C 1020 510, 1030 585, 1060 585" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrow-emerald)"/>
+<path d="M970 510 C 1020 600, 1030 715, 1060 715" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrow-emerald)"/>
+<rect x="60" y="620" width="380" height="26" rx="8" ry="8" fill="#60a5fa" opacity="0.18" stroke="#60a5fa" stroke-width="1"/>
+<text x="74" y="638" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="start">External / hosted</text>
+<g fill="#111827" stroke="#a78bfa" stroke-width="2">
+<ellipse cx="160.0" cy="715.0" rx="80.0" ry="55.0"/>
+<ellipse cx="112.0" cy="720.5" rx="44.800000000000004" ry="46.199999999999996"/>
+<ellipse cx="208.0" cy="720.5" rx="44.800000000000004" ry="46.199999999999996"/>
+<ellipse cx="160.0" cy="687.5" rx="51.2" ry="35.2"/>
+</g>
+<text x="160.0" y="719.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Gravatar</text>
+<g fill="#111827" stroke="#a78bfa" stroke-width="2">
+<ellipse cx="340.0" cy="715.0" rx="80.0" ry="55.0"/>
+<ellipse cx="292.0" cy="720.5" rx="44.800000000000004" ry="46.199999999999996"/>
+<ellipse cx="388.0" cy="720.5" rx="44.800000000000004" ry="46.199999999999996"/>
+<ellipse cx="340.0" cy="687.5" rx="51.2" ry="35.2"/>
+</g>
+<text x="340.0" y="719.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Mail relay</text>
+<path d="M740 580 C 600 700, 350 720, 245 715" fill="none" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+<text x="450" y="692" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Notification fan-out</text>
+<text x="700.0" y="36" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">02 — Container Diagram (C4 Level 2)</text>
+</svg>

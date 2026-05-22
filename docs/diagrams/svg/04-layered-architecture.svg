@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900"
+     width="1200" height="900">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+          </marker>
+          <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="8" markerHeight="8">
+            <circle cx="5" cy="5" r="4" fill="#60a5fa"/>
+          </marker>
+        </defs>
+        
+  
+  <rect x="80" y="90" width="1040" height="110" rx="10" ry="10" fill="#111827" stroke="#60a5fa" stroke-width="2" opacity="1.0"/>
+<text x="110" y="122" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="start">Presentation (Blade · Alpine · Tailwind)</text>
+<text x="110" y="146" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• resources/views/**</text>
+<text x="110" y="162" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• Vite-bundled JS/CSS</text>
+<text x="110" y="178" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• form partials, layouts</text>
+<rect x="80" y="220" width="1040" height="110" rx="10" ry="10" fill="#111827" stroke="#22d3ee" stroke-width="2" opacity="1.0"/>
+<text x="110" y="252" fill="#22d3ee" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="start">HTTP layer (Routes · Middleware · Form Requests)</text>
+<text x="110" y="276" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• routes/web.php</text>
+<text x="110" y="292" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• App\Http\Middleware\*</text>
+<text x="110" y="308" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• App\Http\Requests\*</text>
+<rect x="80" y="350" width="1040" height="110" rx="10" ry="10" fill="#111827" stroke="#34d399" stroke-width="2" opacity="1.0"/>
+<text x="110" y="382" fill="#34d399" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="start">Controllers (thin)</text>
+<text x="110" y="406" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• App\Http\Controllers\*</text>
+<text x="110" y="422" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• delegate to actions / services</text>
+<text x="110" y="438" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• return Views / Redirects</text>
+<rect x="80" y="480" width="1040" height="110" rx="10" ry="10" fill="#111827" stroke="#a78bfa" stroke-width="2" opacity="1.0"/>
+<text x="110" y="512" fill="#a78bfa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="start">Application services &amp; Actions</text>
+<text x="110" y="536" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• App\Actions\* (single-use writes)</text>
+<text x="110" y="552" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• App\Services\* (queries, media, PDFs, demo AI)</text>
+<text x="110" y="568" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• Policies + Gates</text>
+<rect x="80" y="610" width="1040" height="110" rx="10" ry="10" fill="#111827" stroke="#f472b6" stroke-width="2" opacity="1.0"/>
+<text x="110" y="642" fill="#f472b6" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="start">Domain models (Eloquent)</text>
+<text x="110" y="666" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• App\Models\*</text>
+<text x="110" y="682" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• Enums (PropertyType / Status / Approval)</text>
+<text x="110" y="698" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• Notifications + Events</text>
+<rect x="80" y="740" width="1040" height="110" rx="10" ry="10" fill="#111827" stroke="#fbbf24" stroke-width="2" opacity="1.0"/>
+<text x="110" y="772" fill="#fbbf24" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" text-anchor="start">Persistence</text>
+<text x="110" y="796" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• SQLite / MySQL</text>
+<text x="110" y="812" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• storage/app/public filesystem</text>
+<text x="110" y="828" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="start">• database queue + cache + sessions</text>
+<path d="M600 200 L 600 220" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-accent)"/>
+<path d="M600 330 L 600 350" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-accent)"/>
+<path d="M600 460 L 600 480" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-accent)"/>
+<path d="M600 590 L 600 610" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-accent)"/>
+<path d="M600 720 L 600 740" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-accent)"/>
+<text x="600" y="870" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="middle" font-style="italic">Higher layers depend only on the layer directly below.</text>
+<text x="600.0" y="36" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">04 — Layered Architecture (MVC + Services)</text>
+</svg>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 900"
+     width="1500" height="900">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+          </marker>
+          <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="8" markerHeight="8">
+            <circle cx="5" cy="5" r="4" fill="#60a5fa"/>
+          </marker>
+        </defs>
+        
+  
+  <rect x="94.00000000000001" y="70" width="163.42857142857142" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="175.71428571428572" y="90" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Agent</text>
+<text x="175.71428571428572" y="104" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">(Browser)</text>
+<line x1="175.71428571428572" y1="120" x2="175.71428571428572" y2="820" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="285.42857142857144" y="70" width="163.42857142857142" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="367.14285714285717" y="90" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Routes</text>
+<line x1="367.14285714285717" y1="120" x2="367.14285714285717" y2="820" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="476.85714285714283" y="70" width="163.42857142857142" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="558.5714285714286" y="90" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">PropertyController</text>
+<line x1="558.5714285714286" y1="120" x2="558.5714285714286" y2="820" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="668.2857142857142" y="70" width="163.42857142857142" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="749.9999999999999" y="90" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">PropertyRequest</text>
+<line x1="749.9999999999999" y1="120" x2="749.9999999999999" y2="820" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="859.7142857142857" y="70" width="163.42857142857142" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="941.4285714285713" y="90" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">StorePropertyAction</text>
+<line x1="941.4285714285713" y1="120" x2="941.4285714285713" y2="820" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="1051.142857142857" y="70" width="163.42857142857142" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="1132.857142857143" y="90" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">PropertyMediaService</text>
+<line x1="1132.857142857143" y1="120" x2="1132.857142857143" y2="820" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="1242.5714285714284" y="70" width="163.42857142857142" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="1324.2857142857142" y="90" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">DB / Storage</text>
+<line x1="1324.2857142857142" y1="120" x2="1324.2857142857142" y2="820" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M175.71428571428572 150 L367.14285714285717 150" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="271.42857142857144" y="144" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">POST /properties (multipart)</text>
+<path d="M367.14285714285717 190 L558.5714285714286 190" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="462.8571428571429" y="184" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">→ PropertyController@store</text>
+<path d="M558.5714285714286 230 L749.9999999999999 230" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="654.2857142857142" y="224" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">validate(rules)</text>
+<path d="M749.9999999999999 260 L558.5714285714286 260" fill="none" stroke="#34d399" stroke-width="1.8" stroke-dasharray="4 4" marker-end="url(#arrow-emerald)"/>
+<text x="654.2857142857142" y="254" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">validated data</text>
+<path d="M558.5714285714286 300 L941.4285714285713 300" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="750.0" y="294" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">execute(ownerId, data, files)</text>
+<rect x="831.4285714285713" y="326" width="220" height="28" rx="6" ry="6" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="0.18"/>
+<text x="941.4285714285713" y="345" fill="#fbbf24" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">DB::transaction { … }</text>
+<path d="M941.4285714285713 378 L1324.2857142857142 378" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="1132.8571428571427" y="372" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">INSERT properties (slug, approval_status=submitted)</text>
+<path d="M941.4285714285713 418 L1132.857142857143 418" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="1037.142857142857" y="412" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">syncFromUpload(property, files)</text>
+<path d="M1132.857142857143 448 L1324.2857142857142 448" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="1228.5714285714284" y="442" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">store images / video / docs on public disk</text>
+<path d="M1132.857142857143 478 L1324.2857142857142 478" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="1228.5714285714284" y="472" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">INSERT property_{images, videos, documents}</text>
+<path d="M1132.857142857143 518 L941.4285714285713 518" fill="none" stroke="#34d399" stroke-width="1.8" stroke-dasharray="4 4" marker-end="url(#arrow-emerald)"/>
+<text x="1037.142857142857" y="512" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">ok</text>
+<path d="M941.4285714285713 558 L558.5714285714286 558" fill="none" stroke="#34d399" stroke-width="1.8" stroke-dasharray="4 4" marker-end="url(#arrow-emerald)"/>
+<text x="750.0" y="552" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Property</text>
+<path d="M558.5714285714286 598 L175.71428571428572 598" fill="none" stroke="#34d399" stroke-width="1.8" stroke-dasharray="4 4" marker-end="url(#arrow-emerald)"/>
+<text x="367.1428571428571" y="592" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">302 → /properties/{slug}  (flash: submitted for review)</text>
+<text x="750.0" y="36" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">09 — Sequence: Submit a property for review</text>
+</svg>

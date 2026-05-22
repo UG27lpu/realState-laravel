@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1050"
+     width="1500" height="1050">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+          </marker>
+          <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="8" markerHeight="8">
+            <circle cx="5" cy="5" r="4" fill="#60a5fa"/>
+          </marker>
+        </defs>
+        
+  
+  <rect x="30" y="80" width="270" height="26" rx="8" ry="8" fill="#60a5fa" opacity="0.18" stroke="#60a5fa" stroke-width="1"/>
+<text x="44" y="98" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="start">HTTP / Middleware</text>
+<rect x="340" y="80" width="270" height="26" rx="8" ry="8" fill="#34d399" opacity="0.18" stroke="#34d399" stroke-width="1"/>
+<text x="354" y="98" fill="#34d399" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="start">Controllers</text>
+<rect x="650" y="80" width="270" height="26" rx="8" ry="8" fill="#a78bfa" opacity="0.18" stroke="#a78bfa" stroke-width="1"/>
+<text x="664" y="98" fill="#a78bfa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="start">Actions &amp; Services</text>
+<rect x="970" y="80" width="270" height="26" rx="8" ry="8" fill="#f472b6" opacity="0.18" stroke="#f472b6" stroke-width="1"/>
+<text x="984" y="98" fill="#f472b6" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="start">Models</text>
+<rect x="1280" y="80" width="270" height="26" rx="8" ry="8" fill="#fbbf24" opacity="0.18" stroke="#fbbf24" stroke-width="1"/>
+<text x="1294" y="98" fill="#fbbf24" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="700" text-anchor="start">Persistence</text>
+<rect x="30" y="130" width="270" height="100" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="30" y="130" width="6" height="100" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="165.0" y="152" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Auth · Guest</text>
+<text x="165.0" y="170" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">Laravel built-in</text>
+<rect x="30" y="260" width="270" height="100" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="30" y="260" width="6" height="100" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="165.0" y="282" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">EnsureUserHasRole</text>
+<text x="165.0" y="300" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">admin / agent gates</text>
+<rect x="30" y="390" width="270" height="100" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="30" y="390" width="6" height="100" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="165.0" y="412" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">RedirectIfAdmin</text>
+<text x="165.0" y="430" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">guest routing</text>
+<rect x="30" y="520" width="270" height="100" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="30" y="520" width="6" height="100" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="165.0" y="542" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">TrackPropertyView</text>
+<text x="165.0" y="560" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">view counter</text>
+<rect x="30" y="650" width="270" height="100" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="30" y="650" width="6" height="100" rx="3" ry="3" fill="#60a5fa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="165.0" y="672" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">VerifyCsrfToken</text>
+<text x="165.0" y="690" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">Laravel built-in</text>
+<rect x="340" y="130" width="270" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="340" y="130" width="6" height="90" rx="3" ry="3" fill="#34d399" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="475.0" y="152" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PropertyController</text>
+<text x="475.0" y="170" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">list · show · CRUD · mine</text>
+<rect x="340" y="240" width="270" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="340" y="240" width="6" height="90" rx="3" ry="3" fill="#34d399" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="475.0" y="262" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">ChatController</text>
+<text x="475.0" y="280" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">start · show · send</text>
+<rect x="340" y="350" width="270" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="340" y="350" width="6" height="90" rx="3" ry="3" fill="#34d399" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="475.0" y="372" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">AppointmentController</text>
+<text x="475.0" y="390" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">store · index · update</text>
+<rect x="340" y="460" width="270" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="340" y="460" width="6" height="90" rx="3" ry="3" fill="#34d399" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="475.0" y="482" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">WishlistController</text>
+<text x="475.0" y="500" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">toggle · index</text>
+<rect x="340" y="570" width="270" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="340" y="570" width="6" height="90" rx="3" ry="3" fill="#34d399" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="475.0" y="592" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">CompareController</text>
+<text x="475.0" y="610" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">session-backed compare</text>
+<rect x="340" y="680" width="270" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="340" y="680" width="6" height="90" rx="3" ry="3" fill="#34d399" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="475.0" y="702" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">ReportController</text>
+<text x="475.0" y="720" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">PDF receipts &amp; reports</text>
+<rect x="340" y="790" width="270" height="90" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="340" y="790" width="6" height="90" rx="3" ry="3" fill="#34d399" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="475.0" y="812" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Auth\* + Admin\*</text>
+<text x="475.0" y="830" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">login · register · moderation</text>
+<rect x="650" y="130" width="270" height="82" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="650" y="130" width="6" height="82" rx="3" ry="3" fill="#a78bfa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="785.0" y="152" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PropertySearchService</text>
+<text x="785.0" y="170" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">filters + paginator</text>
+<rect x="650" y="232" width="270" height="82" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="650" y="232" width="6" height="82" rx="3" ry="3" fill="#a78bfa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="785.0" y="254" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PropertyMediaService</text>
+<text x="785.0" y="272" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">image/video/doc storage</text>
+<rect x="650" y="334" width="270" height="82" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="650" y="334" width="6" height="82" rx="3" ry="3" fill="#a78bfa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="785.0" y="356" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Store/UpdatePropertyAction</text>
+<text x="785.0" y="374" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">transactional writes</text>
+<rect x="650" y="436" width="270" height="82" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="650" y="436" width="6" height="82" rx="3" ry="3" fill="#a78bfa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="785.0" y="458" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">RegisterUserAction</text>
+<text x="785.0" y="476" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">user + role bootstrap</text>
+<rect x="650" y="538" width="270" height="82" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="650" y="538" width="6" height="82" rx="3" ry="3" fill="#a78bfa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="785.0" y="560" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PdfService</text>
+<text x="785.0" y="578" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">dompdf wrapper</text>
+<rect x="650" y="640" width="270" height="82" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="650" y="640" width="6" height="82" rx="3" ry="3" fill="#a78bfa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="785.0" y="662" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">AnalyticsService</text>
+<text x="785.0" y="680" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">dashboard aggregates</text>
+<rect x="650" y="742" width="270" height="82" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="650" y="742" width="6" height="82" rx="3" ry="3" fill="#a78bfa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="785.0" y="764" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Emi / Investment service</text>
+<text x="785.0" y="782" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">calculators</text>
+<rect x="650" y="844" width="270" height="82" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="650" y="844" width="6" height="82" rx="3" ry="3" fill="#a78bfa" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="785.0" y="866" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Demo\* services</text>
+<text x="785.0" y="884" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">AI · pricing · legal · dupes</text>
+<rect x="970" y="130" width="270" height="95" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="970" y="130" width="6" height="95" rx="3" ry="3" fill="#f472b6" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1105.0" y="152" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">User</text>
+<text x="1105.0" y="170" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">+ HasRoles (Spatie)</text>
+<rect x="970" y="245" width="270" height="95" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="970" y="245" width="6" height="95" rx="3" ry="3" fill="#f472b6" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1105.0" y="267" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Property</text>
+<text x="1105.0" y="285" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">+ SoftDeletes</text>
+<rect x="970" y="360" width="270" height="95" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="970" y="360" width="6" height="95" rx="3" ry="3" fill="#f472b6" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1105.0" y="382" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">PropertyImage / Video / Doc</text>
+<text x="1105.0" y="400" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">media siblings</text>
+<rect x="970" y="475" width="270" height="95" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="970" y="475" width="6" height="95" rx="3" ry="3" fill="#f472b6" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1105.0" y="497" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Conversation · Message</text>
+<text x="1105.0" y="515" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">chat tree</text>
+<rect x="970" y="590" width="270" height="95" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="970" y="590" width="6" height="95" rx="3" ry="3" fill="#f472b6" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1105.0" y="612" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Appointment</text>
+<text x="1105.0" y="630" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">booking</text>
+<rect x="970" y="705" width="270" height="95" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="970" y="705" width="6" height="95" rx="3" ry="3" fill="#f472b6" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1105.0" y="727" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Wishlist</text>
+<text x="1105.0" y="745" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">user ↔ property</text>
+<rect x="970" y="820" width="270" height="95" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="970" y="820" width="6" height="95" rx="3" ry="3" fill="#f472b6" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1105.0" y="842" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Notification (DB)</text>
+<text x="1105.0" y="860" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">fan-out target</text>
+<rect x="1280" y="130" width="270" height="80" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="1280" y="130" width="6" height="80" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1415.0" y="152" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">users table</text>
+<text x="1415.0" y="170" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">+ Spatie pivot tables</text>
+<rect x="1280" y="230" width="270" height="80" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="1280" y="230" width="6" height="80" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1415.0" y="252" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">properties table</text>
+<text x="1415.0" y="270" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">indexes on type/status/city</text>
+<rect x="1280" y="330" width="270" height="80" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="1280" y="330" width="6" height="80" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1415.0" y="352" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">property_* media tables</text>
+<text x="1415.0" y="370" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">FK cascade</text>
+<rect x="1280" y="430" width="270" height="80" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="1280" y="430" width="6" height="80" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1415.0" y="452" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">conversations / messages</text>
+<text x="1415.0" y="470" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">unique buyer/agent/prop</text>
+<rect x="1280" y="530" width="270" height="80" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="1280" y="530" width="6" height="80" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1415.0" y="552" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">appointments table</text>
+<text x="1415.0" y="570" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">schedule index</text>
+<rect x="1280" y="630" width="270" height="80" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="1280" y="630" width="6" height="80" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1415.0" y="652" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">wishlists</text>
+<text x="1415.0" y="670" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">unique user/property</text>
+<rect x="1280" y="730" width="270" height="80" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="1280" y="730" width="6" height="80" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1415.0" y="752" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">notifications table</text>
+<text x="1415.0" y="770" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">UUID + morph</text>
+<rect x="1280" y="830" width="270" height="80" rx="10" ry="10" fill="#1f2937" stroke="#4b5563" stroke-width="1.5" opacity="1.0"/>
+<rect x="1280" y="830" width="6" height="80" rx="3" ry="3" fill="#fbbf24" stroke="none" stroke-width="1.5" opacity="1.0"/>
+<text x="1415.0" y="852" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="600" text-anchor="middle">storage/app/public</text>
+<text x="1415.0" y="870" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle" font-style="italic">filesystem disk</text>
+<path d="M300 175 C 330 175, 310 175, 340 175" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M300 305 C 330 305, 310 305, 340 305" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M300 435 C 330 435, 310 435, 340 435" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M300 565 C 330 565, 310 565, 340 565" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M300 695 C 330 695, 310 695, 340 695" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M300 825 C 330 825, 310 825, 340 825" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M610 175 C 640 175, 620 175, 650 175" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M610 305 C 640 305, 620 305, 650 305" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M610 435 C 640 435, 620 435, 650 435" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M610 565 C 640 565, 620 565, 650 565" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M610 695 C 640 695, 620 695, 650 695" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M610 825 C 640 825, 620 825, 650 825" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M920 175 C 950 175, 940 175, 970 175" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M920 305 C 950 305, 940 305, 970 305" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M920 435 C 950 435, 940 435, 970 435" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M920 565 C 950 565, 940 565, 970 565" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M920 695 C 950 695, 940 695, 970 695" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M920 825 C 950 825, 940 825, 970 825" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M1240 175 C 1270 175, 1250 175, 1280 175" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M1240 305 C 1270 305, 1250 305, 1280 305" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M1240 435 C 1270 435, 1250 435, 1280 435" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M1240 565 C 1270 565, 1250 565, 1280 565" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M1240 695 C 1270 695, 1250 695, 1280 695" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M1240 825 C 1270 825, 1250 825, 1280 825" fill="none" stroke="#4b5563" stroke-width="1" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<text x="750.0" y="36" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">03 — Component Diagram (C4 Level 3)</text>
+</svg>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820"
+     width="1280" height="820">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+          </marker>
+          <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="8" markerHeight="8">
+            <circle cx="5" cy="5" r="4" fill="#60a5fa"/>
+          </marker>
+        </defs>
+        
+  
+  <circle cx="140" cy="192" r="10" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M140 202 L140 226 M126 212 L154 212 M140 226 L128 244 M140 226 L152 244" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+<text x="140" y="262" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Buyer / Browser</text>
+<circle cx="140" cy="372" r="10" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M140 382 L140 406 M126 392 L154 392 M140 406 L128 424 M140 406 L152 424" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+<text x="140" y="442" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Property Agent</text>
+<circle cx="140" cy="552" r="10" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M140 562 L140 586 M126 572 L154 572 M140 586 L128 604 M140 586 L152 604" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+<text x="140" y="622" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Administrator</text>
+<circle cx="140" cy="712" r="10" fill="none" stroke="#60a5fa" stroke-width="2"/>
+<path d="M140 722 L140 746 M126 732 L154 732 M140 746 L128 764 M140 746 L152 764" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+<text x="140" y="782" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Guest visitor</text>
+<rect x="420" y="250" width="440" height="320" rx="10" ry="10" fill="#111827" stroke="#60a5fa" stroke-width="2.5" opacity="1.0"/>
+<text x="640" y="290" fill="#60a5fa" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Estatify</text>
+<text x="640" y="318" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="middle" font-style="italic">Real-estate listing &amp; moderation platform</text>
+<text x="640" y="360" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Laravel 13 web application</text>
+<text x="640" y="382" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Property catalogue · search · wishlist</text>
+<text x="640" y="404" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Buyer ↔ agent chat · appointments</text>
+<text x="640" y="426" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="middle">Admin moderation · PDF reports · QR verify</text>
+<text x="640" y="448" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="400" text-anchor="middle">EMI &amp; investment calculators · demo AI tools</text>
+<g fill="#111827" stroke="#a78bfa" stroke-width="2">
+<ellipse cx="1115.0" cy="155.0" rx="115.0" ry="55.0"/>
+<ellipse cx="1046.0" cy="160.5" rx="64.4" ry="46.199999999999996"/>
+<ellipse cx="1184.0" cy="160.5" rx="64.4" ry="46.199999999999996"/>
+<ellipse cx="1115.0" cy="127.5" rx="73.60000000000001" ry="35.2"/>
+</g>
+<text x="1115.0" y="159.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Gravatar avatars</text>
+<g fill="#111827" stroke="#a78bfa" stroke-width="2">
+<ellipse cx="1115.0" cy="305.0" rx="115.0" ry="55.0"/>
+<ellipse cx="1046.0" cy="310.5" rx="64.4" ry="46.199999999999996"/>
+<ellipse cx="1184.0" cy="310.5" rx="64.4" ry="46.199999999999996"/>
+<ellipse cx="1115.0" cy="277.5" rx="73.60000000000001" ry="35.2"/>
+</g>
+<text x="1115.0" y="309.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Browser / device storage
+(compare session)</text>
+<g fill="#111827" stroke="#a78bfa" stroke-width="2">
+<ellipse cx="1115.0" cy="455.0" rx="115.0" ry="55.0"/>
+<ellipse cx="1046.0" cy="460.5" rx="64.4" ry="46.199999999999996"/>
+<ellipse cx="1184.0" cy="460.5" rx="64.4" ry="46.199999999999996"/>
+<ellipse cx="1115.0" cy="427.5" rx="73.60000000000001" ry="35.2"/>
+</g>
+<text x="1115.0" y="459.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Mail relay (log driver)</text>
+<g fill="#111827" stroke="#a78bfa" stroke-width="2">
+<ellipse cx="1115.0" cy="605.0" rx="115.0" ry="55.0"/>
+<ellipse cx="1046.0" cy="610.5" rx="64.4" ry="46.199999999999996"/>
+<ellipse cx="1184.0" cy="610.5" rx="64.4" ry="46.199999999999996"/>
+<ellipse cx="1115.0" cy="577.5" rx="73.60000000000001" ry="35.2"/>
+</g>
+<text x="1115.0" y="609.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Local filesystem
+(public disk)</text>
+<g fill="#111827" stroke="#a78bfa" stroke-width="2">
+<ellipse cx="1115.0" cy="745.0" rx="115.0" ry="45.0"/>
+<ellipse cx="1046.0" cy="749.5" rx="64.4" ry="37.8"/>
+<ellipse cx="1184.0" cy="749.5" rx="64.4" ry="37.8"/>
+<ellipse cx="1115.0" cy="722.5" rx="73.60000000000001" ry="28.8"/>
+</g>
+<text x="1115.0" y="749.0" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">QR scanner (mobile)</text>
+<path d="M180 220 C 280 220, 360 220, 420 230" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="300" y="212" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">browses, books visits, chats</text>
+<path d="M180 400 C 280 400, 360 400, 420 410" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="300" y="392" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">lists properties, replies to enquiries</text>
+<path d="M180 580 C 280 580, 360 580, 420 590" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="300" y="572" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">approves / rejects, manages users</text>
+<path d="M180 740 C 280 740, 360 740, 420 750" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="300" y="732" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">search &amp; compare (no account)</text>
+<path d="M860 155 C 920 155, 960 155, 1000 155" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arrow-emerald)"/>
+<text x="930" y="147" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">fetches user avatars</text>
+<path d="M860 305 C 920 305, 960 305, 1000 305" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arrow-emerald)"/>
+<text x="930" y="297" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">stores &#x27;compare&#x27; list in session</text>
+<path d="M860 455 C 920 455, 960 455, 1000 455" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arrow-emerald)"/>
+<text x="930" y="447" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">queued mail notifications</text>
+<path d="M860 605 C 920 605, 960 605, 1000 605" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arrow-emerald)"/>
+<text x="930" y="597" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">stores images / videos / docs</text>
+<path d="M860 745 C 920 745, 960 745, 1000 745" fill="none" stroke="#34d399" stroke-width="1.6" marker-end="url(#arrow-emerald)"/>
+<text x="930" y="737" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">QR ↦ /verify/{slug}</text>
+<text x="640.0" y="36" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">01 — System Context (C4 Level 1)</text>
+</svg>

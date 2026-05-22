@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 820"
+     width="1400" height="820">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#60a5fa"/>
+          </marker>
+          <marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5"
+                  markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#34d399"/>
+          </marker>
+          <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5"
+                  markerWidth="8" markerHeight="8">
+            <circle cx="5" cy="5" r="4" fill="#60a5fa"/>
+          </marker>
+        </defs>
+        
+  
+  <rect x="93.99999999999999" y="70" width="149.14285714285714" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="168.57142857142856" y="98" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Buyer</text>
+<line x1="168.57142857142856" y1="120" x2="168.57142857142856" y2="760" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="271.1428571428571" y="70" width="149.14285714285714" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="345.71428571428567" y="98" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Routes</text>
+<line x1="345.71428571428567" y1="120" x2="345.71428571428567" y2="760" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="448.28571428571433" y="70" width="149.14285714285714" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="522.8571428571429" y="98" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">ChatController</text>
+<line x1="522.8571428571429" y1="120" x2="522.8571428571429" y2="760" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="625.4285714285714" y="70" width="149.14285714285714" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="700.0" y="98" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Conversation</text>
+<line x1="700.0" y1="120" x2="700.0" y2="760" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="802.5714285714286" y="70" width="149.14285714285714" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="877.1428571428571" y="98" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Message</text>
+<line x1="877.1428571428571" y1="120" x2="877.1428571428571" y2="760" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="979.7142857142857" y="70" width="149.14285714285714" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="1054.2857142857142" y="98" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">NewMessageNotification</text>
+<line x1="1054.2857142857142" y1="120" x2="1054.2857142857142" y2="760" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<rect x="1156.857142857143" y="70" width="149.14285714285714" height="50" rx="10" ry="10" fill="#1f2937" stroke="#60a5fa" stroke-width="1.4" opacity="1.0"/>
+<text x="1231.4285714285716" y="98" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Agent</text>
+<line x1="1231.4285714285716" y1="120" x2="1231.4285714285716" y2="760" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#arrow)"/>
+<path d="M168.57142857142856 150 L345.71428571428567 150" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="257.1428571428571" y="144" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">POST /messages/start/{property}</text>
+<path d="M345.71428571428567 186 L522.8571428571429 186" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="434.2857142857143" y="180" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">ChatController@start</text>
+<path d="M522.8571428571429 222 L700.0 222" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="611.4285714285714" y="216" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">firstOrCreate(prop, buyer, agent)</text>
+<path d="M700.0 258 L522.8571428571429 258" fill="none" stroke="#34d399" stroke-width="1.8" stroke-dasharray="4 4" marker-end="url(#arrow-emerald)"/>
+<text x="611.4285714285714" y="252" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Conversation</text>
+<path d="M168.57142857142856 308 L345.71428571428567 308" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="257.1428571428571" y="302" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">POST /messages/{conversation}</text>
+<path d="M345.71428571428567 344 L522.8571428571429 344" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="434.2857142857143" y="338" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">ChatController@send</text>
+<path d="M522.8571428571429 380 L877.1428571428571 380" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="700.0" y="374" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">Message::create(sender, body)</text>
+<path d="M522.8571428571429 416 L700.0 416" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="611.4285714285714" y="410" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">touch(last_message_at)</text>
+<path d="M522.8571428571429 466 L1054.2857142857142 466" fill="none" stroke="#60a5fa" stroke-width="1.8" marker-end="url(#arrow-accent)"/>
+<text x="788.5714285714286" y="460" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">notify(NewMessageNotification)</text>
+<path d="M1054.2857142857142 502 L1231.4285714285716 502" fill="none" stroke="#34d399" stroke-width="1.8" marker-end="url(#arrow-emerald)"/>
+<text x="1142.857142857143" y="496" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">DB notification row + (mail relay)</text>
+<path d="M522.8571428571429 552 L168.57142857142856 552" fill="none" stroke="#34d399" stroke-width="1.8" stroke-dasharray="4 4" marker-end="url(#arrow-emerald)"/>
+<text x="345.7142857142857" y="546" fill="#9ca3af" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="400" text-anchor="middle">redirect → conversation view</text>
+<text x="700.0" y="36" fill="#e5e7eb" font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">10 — Sequence: Buyer messages an agent</text>
+</svg>

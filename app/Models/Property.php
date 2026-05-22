@@ -76,12 +76,32 @@ class Property extends Model
     public function coverUrl(): string
     {
         $cover = $this->coverImage();
-
         if ($cover) {
-            return asset('storage/'.$cover->path);
+            return $cover->url();
         }
+        return $this->unsplashFallback();
+    }
 
-        return asset('images/placeholders/property-'.(($this->id ?? 0) % 4 + 1).'.svg');
+    public function coverThumbUrl(): string
+    {
+        $cover = $this->coverImage();
+        if ($cover) {
+            return $cover->thumbnailUrl();
+        }
+        $base = strtok($this->unsplashFallback(), '?');
+        return $base.'?auto=format&fit=crop&w=600&q=75';
+    }
+
+    private function unsplashFallback(): string
+    {
+        $map = [
+            'house'      => 'photo-1600585154340-be6161a56a0c',
+            'apartment'  => 'photo-1493809842364-78817add7ffb',
+            'commercial' => 'photo-1497366216548-37526070297c',
+            'land'       => 'photo-1500382017468-9049fed747ef',
+        ];
+        $id = $map[$this->type?->value ?? ''] ?? 'photo-1600585154340-be6161a56a0c';
+        return "https://images.unsplash.com/{$id}?auto=format&fit=crop&w=1200&q=80";
     }
 
     public function getRouteKeyName(): string

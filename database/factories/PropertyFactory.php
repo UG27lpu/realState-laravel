@@ -6,6 +6,7 @@ use App\Enums\ApprovalStatus;
 use App\Enums\PropertyStatus;
 use App\Enums\PropertyType;
 use App\Models\Property;
+use App\Models\PropertyImage;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
@@ -74,6 +75,62 @@ class PropertyFactory extends Factory
             ),
             'approved_at'     => now()->subDays(fake()->numberBetween(1, 90)),
         ];
+    }
+
+    public function configure(): static
+    {
+        return $this->afterCreating(function (Property $property) {
+            $pool = $this->imagePool($property->type);
+            $urls = collect($pool)->shuffle()->take(fake()->numberBetween(3, 5));
+
+            foreach ($urls as $idx => $url) {
+                PropertyImage::create([
+                    'property_id' => $property->id,
+                    'path'        => $url,
+                    'caption'     => null,
+                    'is_cover'    => $idx === 0,
+                    'sort_order'  => $idx,
+                ]);
+            }
+        });
+    }
+
+    private function imagePool(PropertyType $type): array
+    {
+        return match ($type) {
+            PropertyType::House => [
+                'https://images.unsplash.com/photo-1600585154340-be6161a56a0c',
+                'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9',
+                'https://images.unsplash.com/photo-1570129477492-45c003edd2be',
+                'https://images.unsplash.com/photo-1612637968894-660373e23b03',
+                'https://images.unsplash.com/photo-1484154218962-a197022b5858',
+                'https://images.unsplash.com/photo-1556912173-3bb406ef7e8d',
+                'https://images.unsplash.com/photo-1507089947368-19c1da9775ae',
+                'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09',
+            ],
+            PropertyType::Apartment => [
+                'https://images.unsplash.com/photo-1493809842364-78817add7ffb',
+                'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688',
+                'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2',
+                'https://images.unsplash.com/photo-1554995207-c18c203602cb',
+                'https://images.unsplash.com/photo-1507089947368-19c1da9775ae',
+                'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92',
+                'https://images.unsplash.com/photo-1524758631624-e2822e304c36',
+            ],
+            PropertyType::Commercial => [
+                'https://images.unsplash.com/photo-1497366216548-37526070297c',
+                'https://images.unsplash.com/photo-1497366811353-6870744d04b2',
+                'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40',
+                'https://images.unsplash.com/photo-1524758631624-e2822e304c36',
+                'https://images.unsplash.com/photo-1581922814484-0b48460b7010',
+            ],
+            PropertyType::Land => [
+                'https://images.unsplash.com/photo-1500382017468-9049fed747ef',
+                'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b',
+                'https://images.unsplash.com/photo-1441974231531-c6227db76b6e',
+                'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1',
+            ],
+        };
     }
 
     public function featured(): static
